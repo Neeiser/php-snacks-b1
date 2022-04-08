@@ -7,31 +7,33 @@
     <title>Snack PHP 1</title>
 </head>
 <body>
-    <section class="snack first">
+    <section class="snack-first" style="text-align: center;">
+    <h1>Snack 1</h1>
         <?php
             $array_partita= [
-                ['casa' =>[
-                    'squadra' => 'Olimpia Milano',
-                    'punteggio' => 55,
+                ['squadre' =>[
+                    'casa' => 'Olimpia Milano',
+                    'ospite' => 'Cantù',
                     ],
                 ],
-                ['ospite' =>[
-                    'squadra' => 'Cantù',
-                    'punteggio' => 60,
+                ['punteggio' =>[
+                    'casa' => 55,
+                    'ospite' => 60,
                     ],
                 ],
             ];
 
-            for ($i = 0; $i < count($array_partita); $i++) { ?>
+            for ($i = 0; $i < count($array_partita); $i++) {?>
                 
-                <span><?= $array_partita[$i]['casa']['squadra']; ?></span>
-                <span><?= $array_partita[$i]['ospite']['squadra']; ?></span>
-                <span><?= $array_partita[$i]['casa']['punteggio']; ?></span>
-                <span><?= $array_partita[$i]['ospite']['punteggio']; ?></span>
+                <span><?= $array_partita[$i]['squadre']['casa'] ?></span>
+                <span><?= $array_partita[$i]['squadre']['ospite'] ?></span>
+                <span><?= $array_partita[$i]['punteggio']['casa'] ?></span>
+                <span><?= $array_partita[$i]['punteggio']['ospite'] ?></span>
                 
-                <?
-            }
-        ?>
+                
+            <?}?>
+        
+        <hr>
     </section>
     
 </body>
