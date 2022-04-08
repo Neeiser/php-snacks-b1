@@ -10,16 +10,27 @@
     <section class="snack first">
         <?php
             $array_partita= [
-                [
-                    'casa' => 'Olimpia Milano',
+                ['casa' =>[
+                    'squadra' => 'Olimpia Milano',
                     'punteggio' => 55,
+                    ],
                 ],
-                [
-                    'ospite' => 'Cantù',
+                ['ospite' =>[
+                    'squadra' => 'Cantù',
                     'punteggio' => 60,
-                ]
+                    ],
+                ],
             ];
 
+            for ($i = 0; $i < count($array_partita); $i++) { ?>
+                
+                <span><?= $array_partita[$i]['casa']['squadra']; ?></span>
+                <span><?= $array_partita[$i]['ospite']['squadra']; ?></span>
+                <span><?= $array_partita[$i]['casa']['punteggio']; ?></span>
+                <span><?= $array_partita[$i]['ospite']['punteggio']; ?></span>
+                
+                <?
+            }
         ?>
     </section>
     
