@@ -7,19 +7,22 @@
     <title>Snack PHP 1</title>
 </head>
 <body>
-    <?php
-        $array_partita= [
-            [
-                'casa' => 'Olimpia Milano',
-                'punteggio' => 55,
-            ],
-            [
-                'ospite' => 'Cantù',
-                'punteggio' => 60,
-            ]
-        ];
+    <section class="snack first">
+        <?php
+            $array_partita= [
+                [
+                    'casa' => 'Olimpia Milano',
+                    'punteggio' => 55,
+                ],
+                [
+                    'ospite' => 'Cantù',
+                    'punteggio' => 60,
+                ]
+            ];
 
-    ?>
+        ?>
+    </section>
+    
 </body>
 </html>
 
