@@ -63,8 +63,15 @@
     <!-- SNACK 4 -->
     <section id="snack-4th">
         <?php
-            $arr_numbers=range(0, 15);
-            var_dump($arr_numbers);
+            for($i=0; $i < 15; $i++){
+                $random_numb=rand(1, 100);
+                if(in_array($num, $arrNum) !== true){
+                    $array_numbers="$random_numb";
+                    echo '<pre>';
+                    var_dump($array_numbers);
+                    echo '</pre>';
+                }
+            }
         ?>
     </section>
     
