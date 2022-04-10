@@ -50,20 +50,25 @@
         
         <?php
 
-            if(strlen($_GET['name']) > 3 && strpos($_GET['mail'], '.', 1) !==false && is_numeric($_GET['age']) !== false){
+            if(strlen($_GET['name']) > 3 && strpos($_GET['mail'], '.', 1) !==false && strpos($_GET['mail'], '@', 1) !==false && is_numeric($_GET['age']) !== false){
                 echo "<p>Accesso riuscito</p>";
             } else {
                 echo "<p>Accesso negato</p>";
             };
         ?>
-            
 
+        <hr>
+    </section>
+
+    <!-- SNACK 4 -->
+    <section id="snack-4th">
+        <?php
+            $arr_numbers=range(0, 15);
+            var_dump($arr_numbers);
+        ?>
     </section>
     
+    <!-- Snack 4
+    Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta -->
 </body>
 </html>
-
-<!-- Snack 2
-Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) 
-che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. 
-Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
