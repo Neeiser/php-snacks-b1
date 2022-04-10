@@ -49,11 +49,8 @@
         </form>
         
         <?php
-            $name = $_GET['name'];
-            $mail = $_GET['mail'];
-            $age = $_GET['age'];
 
-            if(strlen($name) > 3 && str_contains($mail, '.@') && is_numeric($age)){
+            if(strlen($_GET['name']) > 3 && str_contains($_GET['mail'], '.') !==false && is_numeric($_GET['age']) !== false){
                 echo 'Accesso riuscito';
             } else {
                 echo 'Accesso negato';
