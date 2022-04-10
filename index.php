@@ -88,9 +88,12 @@
             <h3>Testo spezzato</h3>
             <?php
                 $text_exploded=explode('.', $text);
-                echo '<pre>';
+                for($i=0; $i < count($text_exploded); $i++){
+                    echo '<p>' . $text_exploded[$i] . '.' . '</p>';
+                }
+                /* echo '<pre>';
                 var_dump($text_exploded);
-                echo '</pre>';
+                echo '</pre>'; */
             ?>
     </section>
 </body>
