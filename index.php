@@ -40,7 +40,7 @@
 
     <!-- SNACK 2 -->
     <section id="snack-2nd">
-
+        <h1>Snack 2</h1>
         <form action="" method="get">
             Name: <input style="display: block;" type="text" name="name" id="name">
             Mail: <input style="display: block;" type="text" name="mail" id="mail">
@@ -62,6 +62,7 @@
 
     <!-- SNACK 4 -->
     <section id="snack-4th">
+        <h1>Snack 4</h1>
         <?php
             for($i=0; $i < 15; $i++){
                 $random_numb=rand(1, 100);
@@ -73,9 +74,29 @@
                 }
             }
         ?>
+        <hr>
     </section>
-    
-    <!-- Snack 4
-    Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta -->
+
+    <!-- SNACK 5 -->
+    <section id="snack-5th">
+        <h1>Snack 5</h1>
+            <h3>Testo intero</h3>
+            <?php
+                $text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolor magni eligendi impedit recusandae, quasi, atque a ullam blanditiis est animi veniam perferendis sunt officia id minima dicta consequatur placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolor magni eligendi impedit recusandae, quasi, atque a ullam blanditiis est animi veniam perferendis sunt officia id minima dicta consequatur placeat.';
+                echo $text;
+            ?>
+            <h3>Testo spezzato</h3>
+            <?php
+                if(str_contains('.', $text)){
+                    echo '<p>' . $text . '</p>';
+                }
+            ?>
+    </section>
 </body>
 </html>
+
+<style>
+    body{
+        height: 2000px;
+    }
+</style>
