@@ -50,10 +50,10 @@
         
         <?php
 
-            if(strlen($_GET['name']) > 3 && str_contains($_GET['mail'], '.') !==false && is_numeric($_GET['age']) !== false){
-                echo 'Accesso riuscito';
+            if(strlen($_GET['name']) > 3 && strpos($_GET['mail'], '.', 1) !==false && is_numeric($_GET['age']) !== false){
+                echo "<p>Accesso riuscito</p>";
             } else {
-                echo 'Accesso negato';
+                echo "<p>Accesso negato</p>";
             };
         ?>
             
