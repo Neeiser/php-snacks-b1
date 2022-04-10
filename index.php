@@ -87,9 +87,10 @@
             ?>
             <h3>Testo spezzato</h3>
             <?php
-                if(str_contains('.', $text)){
-                    echo '<p>' . $text . '</p>';
-                }
+                $text_exploded=explode('.', $text);
+                echo '<pre>';
+                var_dump($text_exploded);
+                echo '</pre>';
             ?>
     </section>
 </body>
