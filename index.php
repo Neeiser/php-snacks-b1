@@ -40,17 +40,26 @@
 
     <!-- SNACK 2 -->
     <section id="snack-2nd">
+
+        <form action="" method="get">
+            Name: <input style="display: block;" type="text" name="name" id="name">
+            Mail: <input style="display: block;" type="text" name="mail" id="mail">
+            Age: <input style="display: block;" type="text" name="age" id="age">
+            <input type="submit">
+        </form>
+        
         <?php
             $name = $_GET['name'];
             $mail = $_GET['mail'];
             $age = $_GET['age'];
+
+            if(strlen($name) > 3 && str_contains($mail, '.@') && is_numeric($age)){
+                echo 'Accesso riuscito';
+            } else {
+                echo 'Accesso negato';
+            };
         ?>
-            <form action="" method="get">
-                Name: <input style="display: block;" type="text" name="name" id="name">
-                Mail: <input style="display: block;" type="text" name="mail" id="mail">
-                Age: <input style="display: block;" type="text" name="age" id="age">
-                <input type="submit">
-            </form>
+            
 
     </section>
     
